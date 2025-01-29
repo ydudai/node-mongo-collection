@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="Add new Employee" style="border: solid; margin: 10px;">
+        <h3>Add new Employee</h3>
+        <span>
+            <label for="fullname">Enter your Name</label>
+            <input autocomplete="on" id="fullname" type="text">
+        </span><br>
+        <span>
+            <label for="department">Department</label>
+            <input autocomplete="on" id="department" type="text">
+        </span><br>
+        <span>
+            <label for="age">Age</label>
+            <input autocomplete="on" id="age" type="text">
+        </span><br>
+        <span>
+            <label for="salary">Salary</label>
+            <input autocomplete="on" id="salary" type="text">
+        </span><br>
+        <span>
+            <input autocomplete="on" id="start" type="button" value="Add Employee" onclick=addEmployee()>
+        </span>
+    </div>
+    <div id="Delete Employees" style="border: solid; margin: 10px;">
+        <h3>Delete Employees</h3>
+        <span>
+            <label for="maxage">Enter Max age</label>
+            <input autocomplete="on" id="maxage" type="text">
+        </span><br>
+        <span>
+            <input autocomplete="on" id="delete" type="button" value="Delete" onclick=deleteEmployee()>
+        </span>
+    </div>
+    <div id="Rename Class" style="border: solid; margin: 10px;">
+        <h3>Rename Department</h3>
+        <span>
+            <label for="olddepartment">Enter Old Department</label>
+            <input autocomplete="on" id="olddepartment" type="text">
+        </span><br>
+        <span>
+            <label for="newdepartment">Enter new Department</label>
+            <input autocomplete="on" id="newdepartment" type="text">
+        </span><br>
+        <span>
+            <input autocomplete="on" id="rename" type="button" value="Rename" onclick=renameDepartment()>
+        </span>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>   
+    <script src="../src/index.js"></script>
+</body>
+
+</html>
